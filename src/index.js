@@ -97,7 +97,7 @@ function deleteTodo(id) {
 function detail(id) {
     var detail = document.querySelector('.detail_content');
     detail.style.display = 'flex';
-    detail.innerHTML = "<div class=\"detail  m-auto bg-gray-100 rounded p-4 w-[95%] z-20\">\n                        <div class='flex justify-between items-center'>\n                            <h2 class ='text-green-400'>Ver com mais Detalhes</h2>\n                            <button onclick = closeDetail() class=\"text-2xl text-red-400\">x</button>\n                        </div>\n                        <div class=\"body\">\n                            <h3 class=\"mb-2\">".concat(todos[id].nome, "</h3>\n                            <p class=\"italic text-xs mb-4\">Hora : ").concat(todos[id].data, "</p>\n                            <p>").concat(todos[id].desc, "</p>\n                        </div>\n                    </div>");
+    detail.innerHTML = "<div class=\"detail  m-auto bg-gray-100 rounded p-4 w-[95%] md:w-[32rem] z-20\">\n                        <div class='flex justify-between items-center'>\n                            <h2 class ='text-green-400'>Ver com mais Detalhes</h2>\n                            <button onclick = closeDetail() class=\"text-2xl text-red-400\">x</button>\n                        </div>\n                        <div class=\"body\">\n                            <h3 class=\"mb-2\">".concat(todos[id].nome, "</h3>\n                            <p class=\"italic text-xs mb-4\">Hora : ").concat(todos[id].data, "</p>\n                            <p>").concat(todos[id].desc, "</p>\n                        </div>\n                    </div>");
 }
 function editar(id) {
     var nome = document.getElementById('nome');

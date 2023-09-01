@@ -124,7 +124,7 @@ function detail(id : number){
     const detail = <HTMLDivElement>document.querySelector('.detail_content');
     detail.style.display='flex';
     
-    detail.innerHTML= `<div class="detail  m-auto bg-gray-100 rounded p-4 w-[95%] z-20">
+    detail.innerHTML= `<div class="detail  m-auto bg-gray-100 rounded p-4 w-[95%] md:w-[32rem] z-20">
                         <div class='flex justify-between items-center'>
                             <h2 class ='text-green-400'>Ver com mais Detalhes</h2>
                             <button onclick = closeDetail() class="text-2xl text-red-400">x</button>
